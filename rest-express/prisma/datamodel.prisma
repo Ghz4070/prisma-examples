@@ -14,3 +14,16 @@ type Post {
   content: String
   author: User!
 }
+
+type Product {
+ id: ID! @id
+ createdAt: DateTime! @createdAt
+ updatedAt: DateTime! @updatedAt
+ price: Float!
+ name: String!
+ description: String
+ quantity: Int @default(value: 0)
+ image: String
+ published: Boolean! @default(value: false)
+ category: String!
+}
